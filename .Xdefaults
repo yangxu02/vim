@@ -1,0 +1,80 @@
+ ! General
+ !urxvt*termName:  rxvt-256color
+ urxvt*loginShell:         true
+ urxvt*scrollBar:         false
+ urxvt*secondaryScroll:    true
+ urxvt*saveLines:         65535
+ urxvt*cursorBlink:       false
+ urxvt*urgentOnBell:      false
+ !urxvt*override-redirect:false
+ !urxvt*borderLess:       false
+ !urxvt*internalBorder:       0
+ !urxvt*externalBorder:       0
+ 
+ ! Extensions
+ urxvt*perl-lib:        /usr/lib/urxvt/perl/
+ urxvt*perl-ext-common: default,matcher,searchable-scrollback,selection-pastebin,remote-clipboard,selection-autotransform,clipboard
+ urxvt.selection.pattern-0: ^(/[^:]+):\
+ ! Jump to error
+ URxvt.selection-autotransform.0: s/^([^:[:space:]]+):(\\d+):?$/:e \\Q$1\\E\\x0d:$2\\x0d/
+ ! urxvt*urlLauncher:     /usr/bin/firefox
+ urxvt*urlLauncher:     /opt/google/chrome/google-chrome
+ urxvt*matcher.button:  1
+ !  - catch ugly URLs
+ urxvt.cutchars:        `()'*<>[]{|}"
+
+!-- Xft settings -- !
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+ 
+ ! Appearance
+ !  - use a bitmap font
+ ! urxvt*font:        xft:Droid Sans Mono:antialias=true,pixelsize=12,style=regular
+ urxvt*font:        xft:Menlo for Powerline:style=RegularForPowerline,pixelsize=11.5
+ !xft:DejaVu Sans Mono-11.5
+ ! urxvt*boldFont:    xft:Droid Sans:antialias=true,pixelsize=12,style=bold
+ !  - use xft for drawing fonts
+ !urxvt*font:       xft:Terminus:8
+ !  - cursor
+ urxvt*cursorColor: #DCDCCC
+ !  - pseudo transparency
+ urxvt*shading:    50
+ urxvt*transparent:true
+
+ urxvt.skipBuiltinGlyphs: true
+ urxvt.imLocale: en_US.UTF-8
+
+ urxvt.keysym.M-C-z: command:\033]701;zh_CN.GBK\007
+ urxvt.keysym.M-C-x: command:\033]701;en_US.UTF-8\007
+
+ !
+ !  - color scheme
+ urxvt.background:  #232323
+ urxvt.foreground:  #e6e1dc
+ ! black + red
+ urxvt*color0:      #002b36
+ urxvt*color1:      #839496
+ ! green + yellow
+ urxvt*color2:      #073642
+ urxvt*color3:      #93a1a1
+ ! blue + purple
+ urxvt*color4:      #586e75
+ urxvt*color5:      #eee8d5
+ ! cyan + white
+ urxvt*color6:      #657b83
+ urxvt*color7:      #fdf6e3
+ ! bright-black + bright-red
+ urxvt*color8:      #b58900
+ urxvt*color9:      #6c71c4
+ ! bright-green + bright-yellow
+ urxvt*color10:     #cb4b16
+ urxvt*color11:     #268bd2
+ ! bright-blue + bright-purple
+ urxvt*color12:     #d30102
+ urxvt*color13:     #2aa198
+ ! bright-cyan + bright-white
+ urxvt*color14:     #d33682
+ urxvt*color15:     #859900
